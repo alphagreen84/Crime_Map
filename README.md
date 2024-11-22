@@ -76,14 +76,29 @@ This project automates the process of:
  ```
 Example CSV (updated_dataframe_with_geocodes.csv)
    ```bash
-  | Name      | City       | Address                     | Lat        | Lon        |
-|-----------|------------|-----------------------------|------------|------------|
-| John Doe  | Stockholm  | Example Street 12, Stockholm | 59.329323  | 18.068581  |
+| Name      | City       | Address                       | Lat        | Lon        |
+|-----------|------------|-------------------------------|------------|------------|
+| John Doe  | Stockholm  | Example Street 12, Stockholm  | 59.329323  | 18.068581  |
 | Jane Roe  | Göteborg   | Another Street 34 B, Göteborg | 57.708870  | 11.974560  |
 ```
-## File in the Project
-- script.py: Main script for scraping and geocoding.
+
+## Files in the Project
+- main.py: Main script for scraping and geocoding.
 - requirements.txt: Python dependencies for the project.
 - locations.json: JSON file containing the final geocoded results.
 - updated_dataframe_with_geocodes.csv: CSV file containing the tabular data.
 
+## Requirements
+- Python 3.7+
+- Chrome Browser
+- Google Maps Geocoding API key
+
+
+## Future Improvements
+- Add multi-threading for faster scraping and geocoding.
+- Support for more dynamic websites.
+- Scrape information like vehicles ownership.
+- Make a heat map over congested areas.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
