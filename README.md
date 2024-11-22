@@ -2,6 +2,8 @@
 
 This code scrapes data from different sources and visualize persons that has been convicted in court.
 
+![image](https://github.com/user-attachments/assets/0a22dcb4-b201-45c2-b258-ce461e506ea5)
+
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -26,7 +28,7 @@ This code scrapes data from different sources and visualize persons that has bee
 The objective of this project is to grab data from a conviction database (get persons by city) and based on that data scrape further details about the persons location.
 Finally visualize the persons location on a map.
 - 🛒 Scrapes the krimfup.se and ratsit.se to gather location data using `Selenium` and `BeautifulSoup`.
-- 🧠 Use Google Geocode API to make location name into lat/lon.
+- 🧠 Use Google Geocode API to make location name into lat/lon using `requests`.
 - 📩 Plotting each locatoin on a Google Maps html file.
 
 
