@@ -37,7 +37,23 @@ This project automates the process of:
    pip install -r requirements.txt
 3. Download and install the Chrome WebDriver:
    Ensure the version matches your installed Chrome browser.
-4. Add your Google API key in the script:
+
+## Usage
+1. Serve the google html map over http
+    ```bash
+    python -m http.server 8000
+
+2. Run the script:
+     ```bash
+   python krimfup_ratsit_geocode.ipynb
+
+3. Enter the name of the city when prompted.
+
+4. View the generated files:
+   - locations.json: Contains the scraped and geocoded data.
+   - updated_dataframe_with_geocodes.csv: Contains a tabular format of the data.
+   
+6. Add your Google API key in the script:
    Replace "YOUR_GOOGLE_API_KEY" in the script with your actual API key.
 
    
