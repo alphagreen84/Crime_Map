@@ -56,4 +56,20 @@ This project automates the process of:
 6. Add your Google API key in the script:
    Replace "YOUR_GOOGLE_API_KEY" in the script with your actual API key.
 
-   
+## Output
+   ```bash
+   [
+    {
+        "Name": "John Doe",
+        "Address": "Example Street 12, Stockholm",
+        "Lat": 59.329323,
+        "Lon": 18.068581
+    },
+    {
+        "Name": "Jane Roe",
+        "Address": "Another Street 34 B, Göteborg",
+        "Lat": 57.70887,
+        "Lon": 11.97456
+    }
+]
+
