@@ -1,7 +1,7 @@
 # **Visualize the criminals in your neigbourhood **
 
-This code scrapes data from different sources and visualize persons that been convicted in court.
-It shows the persons home location on Google Maps. No informtion about the conviction.
+This code scrapes data from different sources and visualize persons that has been convicted in court.
+
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -12,29 +12,27 @@ It shows the persons home location on Google Maps. No informtion about the convi
 
 1. [About the Project](#about-the-project)
 2. [Getting Started](#getting-started)
-3. [Usage](#usage)
+3. [Overview](#overview)
+4. [Usage](#usage)
+5. [Features](#features)
+6. [Technologies Used](#technologies-used)
+7. [Installation](#installation)
+8. [Output](#output)
 
 
 ---
 ## **About the Project**
 
-This code automate this process:
+The objective of this project is to grab data from a conviction database (get persons by city) and based on that data scrape further details about the persons location.
+Finally visualize the persons location on a map.
 - 🛒 Scrapes the krimfup.se and ratsit.se to gather location data using `Selenium` and `BeautifulSoup`.
 - 🧠 Use Google Geocode API to make location name into lat/lon.
 - 📩 Plotting each locatoin on a Google Maps html file.
 
 
-
-## Overview
-This project automates the process of:
-1. Scraping names and locations from a public website.
-2. Fetching detailed addresses from **Ratsit** using the scraped names and locations.
-3. Geocoding the addresses into latitude and longitude coordinates using the **Google Maps Geocoding API**.
-4. Storing the final data in a JSON file (`locations.json`) and a CSV file (`updated_dataframe_with_geocodes.csv`).
-
 ---
 
-## Features
+## **Features**
 - Scrape name and location data from [Krimfup.se](https://www.krimfup.se/search).
 - Use **Selenium** to fetch addresses from [Ratsit](https://www.ratsit.se).
 - Geocode the addresses into latitude/longitude using the **Google Maps Geocoding API**.
@@ -42,7 +40,7 @@ This project automates the process of:
 
 ---
 
-## Technologies Used
+## **Technologies Used**
 - **Python**
 - **Requests**: For sending HTTP requests to the websites.
 - **BeautifulSoup**: For parsing and scraping HTML content.
@@ -52,7 +50,7 @@ This project automates the process of:
 
 ---
 
-## Installation
+## **Installation**
 
 1. Clone the repository:
    ```bash
@@ -81,7 +79,7 @@ This project automates the process of:
 6. Add your Google API key in the script:
    Replace "YOUR_GOOGLE_API_KEY" in the script with your actual API key.
 
-## Output
+## **Output**
    Example JSON (locations.json)
    ```bash
    [
@@ -107,23 +105,22 @@ Example CSV (updated_dataframe_with_geocodes.csv)
 | Jane Roe  | Göteborg   | Another Street 34 B, Göteborg | 57.708870  | 11.974560  |
 ```
 
-## Files in the Project
+## **Files in the Project**
 - main.py: Main script for scraping and geocoding.
 - requirements.txt: Python dependencies for the project.
 - locations.json: JSON file containing the final geocoded results.
 - updated_dataframe_with_geocodes.csv: CSV file containing the tabular data.
 
-## Requirements
+## **Requirements**
 - Python 3.7+
 - Chrome Browser
 - Google Maps Geocoding API key
 
 
-## Future Improvements
+## **Future Improvements**
 - Add multi-threading for faster scraping and geocoding.
 - Support for more dynamic websites.
 - Scrape information like vehicles ownership.
 - Make a heat map over congested areas.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
