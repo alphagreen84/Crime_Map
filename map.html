@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps with JSON Locations</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYkpdEMtQ3wiFl-plag65wvnZBOZo8ZRY&libraries=marker&v=weekly&callback=initMap" async defer></script>
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Google Maps with JSON Locations</h1>
+  <div id="map"></div>
+  <script>
+    async function initMap() {
+      // Import the AdvancedMarkerElement library
+      const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+      // Map options
+      const mapOptions = {
+        center: { lat: 60.12816, lng: 18.643501 }, //
+        zoom: 5,
+        mapId: 'DEMO_MAP_ID' // Replace with your Map ID
+      };
+
+      // Initialize the map
+      const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+      // Fetch JSON data
+      fetch('locations.json')
+        .then(response => response.json())  
+        .then(locations => {
+          // Add markers from the JSON data
+          locations.forEach(location => {
+            new AdvancedMarkerElement({
+              map: map,
+              position: { lat: location.Lat, lng: location.Lon },
+              title: location.Name
+            });
+          });
+        })
+        .catch(error => console.error("Error loading JSON data:", error));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+
+
+#Too serv the html map with markers on you local machine
+python -m http.server 8000 
+
