@@ -76,6 +76,6 @@ This project automates the process of:
  ```
 Example CSV (updated_dataframe_with_geocodes.csv)
    ```bash
-   Name	City	Address	Lat	Lon
-   John Doe	Stockholm	Example Street 12, Stockholm	59.329323	18.068581
-   Jane Roe	Göteborg	Another Street 34 B, Göteborg	57.708870	11.974560
+  Name	City	Address	Lat	Lon
+John Doe	Stockholm	Example Street 12, Stockholm	59.329323	18.068581
+Jane Roe	Göteborg	Another Street 34 B, Göteborg	57.708870	11.974560
