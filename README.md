@@ -57,6 +57,7 @@ This project automates the process of:
    Replace "YOUR_GOOGLE_API_KEY" in the script with your actual API key.
 
 ## Output
+   Example JSON (locations.json)
    ```bash
    [
     {
@@ -72,4 +73,9 @@ This project automates the process of:
         "Lon": 11.97456
     }
 ]
-
+ ```
+Example CSV (updated_dataframe_with_geocodes.csv)
+   ```bash
+   Name	City	Address	Lat	Lon
+   John Doe	Stockholm	Example Street 12, Stockholm	59.329323	18.068581
+   Jane Roe	Göteborg	Another Street 34 B, Göteborg	57.708870	11.974560
