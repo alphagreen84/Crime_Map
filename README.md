@@ -1,4 +1,4 @@
-# **Visualize the criminals in your neigbourhood **
+# **Visualize the criminals in your neighborhood**
 
 This code scrapes data from different sources and visualize persons that has been convicted in court.
 
