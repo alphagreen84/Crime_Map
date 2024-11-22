@@ -32,3 +32,6 @@ This project automates the process of:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/your-repository-name.git
+2. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
