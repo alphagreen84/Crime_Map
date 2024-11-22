@@ -29,7 +29,7 @@ The objective of this project is to grab data from a conviction database (get pe
 Finally visualize the persons location on a map.
 - 🛒 Scrapes the krimfup.se and ratsit.se to gather location data using `Selenium` and `BeautifulSoup`.
 - 🧠 Use Google Geocode API to make location name into lat/lon using `requests`.
-- 📩 Plotting each locatoin on a Google Maps html file.
+- 📩 Plotting each location and making a heat map on a Google Maps html file.
 
 
 ---
