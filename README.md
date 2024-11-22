@@ -1,6 +1,7 @@
-# **AI-based Lunch Box Planner**
+# **Visualize the criminals in your neigbourhood **
 
-An intelligent tool to plan your weekly shopping by scraping ICA's website for weekly offers, generating a shopping list with OpenAI, and sending it via SMS using Twilio.
+This code scrapes data from different sources and visualize persons that been convicted in court.
+It shows the persons home location on Google Maps. No informtion about the conviction.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -17,10 +18,10 @@ An intelligent tool to plan your weekly shopping by scraping ICA's website for w
 ---
 ## **About the Project**
 
-The AI-based Lunch Box Planner simplifies weekly shopping by automating key tasks:
-- 🛒 Scrapes the ICA website for weekly offers using `Selenium` and `BeautifulSoup`.
-- 🧠 Uses OpenAI's API to generate a tailored shopping list based on available offers.
-- 📩 Sends the final shopping list via SMS using Twilio.
+This code automate this process:
+- 🛒 Scrapes the krimfup.se and ratsit.se to gather location data using `Selenium` and `BeautifulSoup`.
+- 🧠 Use Google Geocode API to make location name into lat/lon.
+- 📩 Plotting each locatoin on a Google Maps html file.
 
 
 
