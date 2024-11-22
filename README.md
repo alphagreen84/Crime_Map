@@ -35,3 +35,9 @@ This project automates the process of:
 2. Install the required Python libraries:
    ```bash
    pip install -r requirements.txt
+3. Download and install the Chrome WebDriver:
+   Ensure the version matches your installed Chrome browser.
+4. Add your Google API key in the script:
+   Replace "YOUR_GOOGLE_API_KEY" in the script with your actual API key.
+
+   
