@@ -123,6 +123,6 @@ Example CSV (updated_dataframe_with_geocodes.csv)
 - Add multi-threading for faster scraping and geocoding.
 - Support for more dynamic websites.
 - Scrape information like vehicles ownership.
-- Make a heat map over congested areas.
+- Make the code into a Flask webb app.
 
 
