@@ -64,7 +64,7 @@ Finally visualize the persons location on a map.
    Ensure the version matches your installed Chrome browser.
 
 ## Usage
-1. Serve the google html map over http
+1. Serve the google html map over http when running on local enviroment
     ```bash
     python -m http.server 8000
 
